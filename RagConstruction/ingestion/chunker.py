@@ -30,21 +30,3 @@ def create_chunks(text: str, chunk_size: int = 2, overlap: int = 1):
             "end": i + len(chunk) - 1
         })
     return chunks
-
-# text = """
-# FastAPI is a web framework.
-# It supports dependency injection.
-# Dependency injection allows reusable components.
-# FastAPI supports OAuth2.
-# JWT tokens are commonly used.
-# """
-
-
-# chunks = create_chunks(
-#     text=text,
-#     chunk_size=2,
-#     overlap=1
-# )
-
-# for chunk in chunks:
-#     print(chunk)

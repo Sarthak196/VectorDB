@@ -10,14 +10,3 @@ def clean_text(text: str) -> str:
     text = re.sub(r"\n\s*\n+", "\n\n", text)
     text = text.strip()
     return text
-
-
-# if __name__ == "__main__":
-#     text = """
-#     This is a sample text with    multiple spaces, newlines, and tabs.
-#     Hi                                                  my
-
-#     name      is        Sarthak
-
-#     """
-#     print(clean_text(text))

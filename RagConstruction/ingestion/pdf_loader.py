@@ -20,13 +20,3 @@ def load_pdf(file_path: str) -> list:
             "text": text
         })
     return pages
-
-# if __name__ == "__main__":
-#     PDF_FILE_PATH = f"{PROJECT_NAME}/{DOCUMENTS_PATH}/Python.pdf"
-#     pages = load_pdf(PDF_FILE_PATH)
-
-#     print(len(pages))
-
-#     print(pages[0]["page"])
-
-#     print(pages[0]["text"][:500])
